@@ -20,9 +20,10 @@ export default function PropertiesPage() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {properties.map((p) => (
           <Link key={p.slug} href={`/property/${p.slug}`}>
-            <a>
+            {/* <a>
               <PropertyCard property={p} />
-            </a>
+            </a> */}
+            <PropertyCard property={p} />
           </Link>
         ))}
       </div>
